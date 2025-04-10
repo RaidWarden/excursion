@@ -9,12 +9,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
 }
 
 /* Header-styling */
 header {
     padding: 20px;
+    position: relative;
+    z-index: 2;
+    background-color: black; /* valfritt men rekommenderat för kontrast */
+    color: white;
+    padding: 2rem;
+    text-align: center;
 }
 
 /* Titel-styling */
@@ -34,3 +39,23 @@ h1 {
 .download-link:hover {
     text-decoration: underline;
 }
+
+video {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .coming-soon {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .phone-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
